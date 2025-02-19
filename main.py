@@ -8,6 +8,8 @@ job = cron.new(command='mkdir -p $HOME/microntab')
 
 # Configurar para que se ejecute cada minuto
 
+# export DISPLAY=:0 && export XDG_RUNTIME_DIR=/run/user/1000 && dunstify -u critical --icon="info" --appname="Nombre del proceso" "Título" "Mensaje"
+
 # job.setall('30 3 * * *')
 
 job.minute.on(35)
